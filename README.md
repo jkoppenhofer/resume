@@ -6,7 +6,7 @@
 [resume-elegant](/resume-elegant.html)
 [resume-eloquent](/resume-eloquent.html)
 [resume-kendall](/resume-kendall.html)
-[resume-material](/resume-maaterial.html)
+[resume-material](/resume-material.html)
 [resume-paper](/resume-paper.html)
 [resume-resu](/resume-resu.html)
 [resume-stackoverflow](/resume-stackoverflow.html)
