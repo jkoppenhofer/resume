@@ -1,3 +1,3 @@
 # resume
 
-(/resume-caffeine.html)
+[resume-caffeine](/resume-caffeine.html)
