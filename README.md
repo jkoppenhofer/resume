@@ -1,3 +1,15 @@
 # resume
 
 [resume-caffeine](/resume-caffeine.html)
+[resume-crisp](/resume-crisp.html)
+[resume-crispy-potato](/resume-crispy-potato.html)
+[resume-elegant](/resume-elegant.html)
+[resume-eloquent](/resume-eloquent.html)
+[resume-kendall](/resume-kendall.html)
+[resume-material](/resume-maaterial.html)
+[resume-paper](/resume-paper.html)
+[resume-resu](/resume-resu.html)
+[resume-stackoverflow](/resume-stackoverflow.html)
+[resume-striking](/resume-striking.html)
+[resume-timeline](/resume-timeline.html)
+[resume-zurb](/resume-zurb.html)
