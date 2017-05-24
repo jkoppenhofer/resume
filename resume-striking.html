@@ -1,0 +1,813 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+        <title>Jonathan Koppenhofer</title>
+        <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"
+        rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=Oxygen:700,400,300'
+        rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <style media="screen">
+            body {
+            	font: 15px Oxygen, Arial, Helvetica, sans-serif;
+            	background-color: #F0EDED;
+            }
+            
+            section {
+            	margin-bottom: 2em;
+            }
+            
+            img {
+              border-radius: 100px;
+            }
+            
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+            
+            a:hover {
+              text-transform: underline;
+              color: #000;
+            }
+            
+            .bold {
+              font-size: 1.1em;
+              font-weight: bold;
+            }
+            
+            #resume {
+              background-color: #FFF;
+              margin-left: 10%;
+              margin-right: 10%;
+              margin-top: 5%;
+              margin-bottom: 5%;
+              padding-top: 2%;
+              padding-bottom: 2%;
+              box-shadow: 0px 0px 10px #000;
+              -webkit-box-shadow: 0px 0px 10px #000;
+              -moz-box-shadow: 0px 0px 10px #000;
+            }
+            
+            #header {
+             background-color: #000;
+             color: #fff;
+             text-align: center;
+             box-shadow: 3px 3px 3px 3px black;
+             width: 100%;
+             left: 0;
+            }
+            
+            #header a {
+              color: #fff;
+            }
+            
+            #header ul li {
+              list-style-type: none;
+              display: inline-block;
+              margin-left: 0;
+            }
+            
+            .contact {
+              margin-top: 2%;
+              margin-left: -5%;
+            }
+            
+            .location {
+              margin-top: 2%;
+              font-size: 0.8em;
+            }
+            #basics .summary {
+              text-align: center;
+            }
+            
+            .media {
+              margin-top: 2%;
+            }
+            
+            .media-item {
+              display: inline-block;
+            }
+            
+            #work, #volunteer, #education, #awards, #publications, #skills, #languages, #interests {
+              border-bottom: 1px dotted #eee;
+            }
+            
+            #work .section-info {
+              font-size: 1.2em;
+              color: #FFF;
+              background-color: #0099CC;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 3em;
+            }
+            
+            #volunteer .section-info {
+              font-size: 1.2em;
+              color: #FFF;
+              background-color: #D4A017;
+              border-radius: 0;
+              right: 1%;
+              text-align: center;
+              line-height: 3em;
+            }
+            
+            #education .section-info {
+              font-size: 1.2em;
+              color: #FFF;
+              background-color: #438D80;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 3em;
+            }
+            
+            #awards .section-info {
+              font-size: 1.2em;
+              color: #FFF;
+              background-color: #954535;
+              border-radius: 0;
+              right: 1%;
+              text-align: center;
+              line-height: 3em;
+            }
+            
+            #publications .section-info {
+              font-size: 1.2em;
+              color: #FFF;
+              background-color: #B2C248;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 3em;
+            }
+            
+            #skills .section-info {
+              font-size: 1.2em;
+              color: #FFF;
+              background-color: #CC6600;
+              border-radius: 0;
+              right: 1%;
+              text-align: center;
+              line-height: 3em;
+            }
+            
+            #languages .section-info {
+              font-size: 1.2em;
+              color: #FFF;
+              background-color: #306754;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 3em;
+            }
+            
+            #interests .section-info {
+              font-size: 1.2em;
+              color: #FFF;
+              background-color: #6F4E37;
+              border-radius: 0;
+              right: 1%;
+              text-align: center;
+              line-height: 3em;
+            }
+            
+            #references .section-info {
+              font-size: 1.2em;
+              color: #FFF;
+              background-color: #85BB65;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 3em;
+            }
+            
+            #work .work-item, #volunteer .volunteer-item , #education .education-item, #awards .award-item,
+            #publications .pub-item, #languages .lang-item, #interests .interest-item, #references .ref-item  {
+              padding-left: 2%;
+              padding-bottom: 2%;
+              padding-top: 0.2em;
+            }
+            
+            #work .work-item:hover , #volunteer .volunteer-item:hover, #education .education-item:hover, #awards .award-item:hover,
+            #publications .pub-item:hover, #languages .lang-item:hover, #interests .interest-item:hover, #references .ref-item:hover{
+              background-color: #EEE;
+            }
+            
+            #work .work-position, #volunteer .volunteer-position , #education .education-institution, #awards .award-title,
+            #publications .pub-name, #languages .lang-name, #interests .interest-name {
+              text-transform: uppercase;
+              font-size: 1.2em;
+              font-weight: bold;
+            }
+            
+            #work .work-position, #work .duration {
+              color: #0099CC
+            }
+            
+            #volunteer .volunteer-position, #volunteer .duration {
+              color: #D4A017;
+            }
+            
+            #education .education-institution, #education .duration  {
+              color: #438D80;
+            }
+            
+            #awards .award-title, #awards .award-date {
+              color: #954535;
+            }
+            
+            #publications .pub-name, #publications .pub-date {
+              color: #B2C248;
+            }
+            
+            #languages .lang-name {
+              color: #306754;
+            }
+            
+            #interests .interest-name {
+              color: #6F4E37;
+            }
+            
+            #references .ref-text {
+              word-wrap: break-word;
+            }
+            
+            #references .ref-by {
+              text-align: right;
+            }
+            
+            #work .duration, #volunteer .duration, #education .duration, #awards .award-date , 
+            #publications .pub-date, #languages .lang-fluency, #interests .interest-keyword {
+              font-size: 1em;
+              text-align: center;
+            }
+            
+            #skills .skills-header th {
+              font-size: 1.2em;
+              width: 33%;
+            }
+            
+            #skills .skills-rows  td{
+              width: 33%;
+            }
+            
+            #skills .skills-rows td:first-child {
+              color: #CC6600;
+            }
+            
+            .name {
+              text-transform: uppercase;
+              border-bottom: 1px solid white;
+            }
+            .item {
+            	margin-bottom: 1em;
+            }
+            
+            .small-header {
+              display: none;
+            }
+            
+            /* media queries */
+            @media all and (max-width: 768px) {
+              #work .section-info, #volunteer .section-info, #education .section-info,
+              #awards .section-info, #publications .section-info, #skills .section-info,
+              #languages .section-info, #interests .section-info, #references .section-info  {
+                font-size: 1.1em;
+            	right: 0;
+            	left: 0;
+              }
+              .small-header {
+                display: block;
+              }
+              
+              .big-header {
+                display: none;
+              }
+              
+              #work, #volunteer, #education, #awards, #publications, #languages, #skills, #interests, #references {
+                font-size: 0.7em;
+              }
+              
+              .name {
+                font-size: 2em;
+              }
+              
+              .media {
+                font-size: 0.8em;
+              }
+              
+              #header .contact ul li{
+            	display: block;
+            	margin-right: 10%;
+              }
+            }
+            
+            @media all and (min-width: 769px) and (max-width: 1093px) {
+              #work .section-info, #volunteer .section-info, #education .section-info,
+              #awards .section-info, #publications .section-info, #skills .section-info,
+              #languages .section-info, #interests .section-info, #references .section-info  {
+                font-size: 0.9em;
+              }
+            }
+        </style>
+        <style media="print">
+            body {
+            	font: 15px Oxygen, Arial, Helvetica, sans-serif;
+            }
+            
+            section {
+            	margin-bottom: 2em;
+            }
+            
+            img {
+              border-radius: 100px;
+            }
+            
+            a {
+              text-decoration: none;
+              color: #000;
+            }
+            
+            a:hover {
+              text-transform: underline;
+              color: #000;
+            }
+            
+            .bold {
+              font-size: 1.1em;
+              font-weight: bold;
+            }
+            
+            #header {
+             background-color: #000;
+             color: #fff;
+             text-align: center;
+             box-shadow: 3px 3px 3px 3px black;
+             width: 100%;
+             left: 0;
+            }
+            
+            #header a {
+              color: #fff;
+            }
+            
+            #header ul li {
+              list-style-type: none;
+              display: inline-block;
+              margin-left: 0;
+            }
+            
+            .contact {
+              margin-top: 2%;
+              margin-left: -5%;
+            }
+            
+            .location {
+              margin-top: 2%;
+              font-size: 0.8em;
+            }
+            #basics .summary {
+              text-align: center;
+            }
+            
+            .media {
+              margin-top: 2%;
+            }
+            
+            .media-item {
+              display: inline-block;
+            }
+            
+            #work, #volunteer, #education, #awards, #publications, #skills, #languages, #interests {
+              border-bottom: 1px dotted #eee;
+            }
+            
+            #work .section-info {
+              font-size: 2em;
+              color: #FFF;
+              background-color: #0099CC;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 1em;
+            }
+            
+            #volunteer .section-info {
+              font-size: 2em;
+              color: #FFF;
+              background-color: #D4A017;
+              border-radius: 0;
+              right: 1%;
+              text-align: center;
+              line-height: 1em;
+            }
+            
+            #education .section-info {
+              font-size: 2em;
+              color: #FFF;
+              background-color: #438D80;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 1em;
+            }
+            
+            #awards .section-info {
+              font-size: 2em;
+              color: #FFF;
+              background-color: #954535;
+              border-radius: 0;
+              right: 1%;
+              text-align: center;
+              line-height: 1em;
+            }
+            
+            #publications .section-info {
+              font-size: 2em;
+              color: #FFF;
+              background-color: #B2C248;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 1em;
+            }
+            
+            #skills .section-info {
+              font-size: 2em;
+              color: #FFF;
+              background-color: #CC6600;
+              border-radius: 0;
+              right: 1%;
+              text-align: center;
+              line-height: 1em;
+            }
+            
+            #languages .section-info {
+              font-size: 2em;
+              color: #FFF;
+              background-color: #306754;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 1em;
+            }
+            
+            #interests .section-info {
+              font-size: 2em;
+              color: #FFF;
+              background-color: #6F4E37;
+              border-radius: 0;
+              right: 1%;
+              text-align: center;
+              line-height: 1em;
+            }
+            
+            #references .section-info {
+              font-size: 2em;
+              color: #FFF;
+              background-color: #85BB65;
+              border-radius: 0;
+              left: 1%;
+              right: 1%;
+              text-align: center;
+              line-height: 1em;
+            }
+            
+            #work .work-item, #volunteer .volunteer-item , #education .education-item, #awards .award-item,
+            #publications .pub-item, #languages .lang-item, #interests .interest-item, #references .ref-item  {
+              padding-left: 2%;
+              padding-bottom: 2%;
+              padding-top: 0.2em;
+            }
+            
+            #work .work-item:hover , #volunteer .volunteer-item:hover, #education .education-item:hover, #awards .award-item:hover,
+            #publications .pub-item:hover, #languages .lang-item:hover, #interests .interest-item:hover, #references .ref-item:hover{
+              background-color: #EEE;
+            }
+            
+            #work .work-position, #volunteer .volunteer-position , #education .education-institution, #awards .award-title,
+            #publications .pub-name, #languages .lang-name, #interests .interest-name {
+              text-transform: uppercase;
+              font-size: 1.2em;
+              font-weight: bold;
+            }
+            
+            #work .work-position, #work .duration {
+              color: #0099CC
+            }
+            
+            #volunteer .volunteer-position, #volunteer .duration {
+              color: #D4A017;
+            }
+            
+            #education .education-institution, #education .duration  {
+              color: #438D80;
+            }
+            
+            #awards .award-title, #awards .award-date {
+              color: #954535;
+            }
+            
+            #publications .pub-name, #publications .pub-date {
+              color: #B2C248;
+            }
+            
+            #languages .lang-name {
+              color: #306754;
+            }
+            
+            #interests .interest-name {
+              color: #6F4E37;
+            }
+            
+            #references .ref-text {
+              word-wrap: break-word;
+            }
+            
+            #references .ref-by {
+              text-align: right;
+            }
+            
+            #work .duration, #volunteer .duration, #education .duration, #awards .award-date , 
+            #publications .pub-date, #languages .lang-fluency, #interests .interest-keyword {
+              font-size: 1em;
+              text-align: center;
+            }
+            
+            #skills .skills-header th {
+              font-size: 1.2em;
+              width: 33%;
+            }
+            
+            #skills .skills-rows  td{
+              width: 33%;
+            }
+            
+            #skills .skills-rows td:first-child {
+              color: #CC6600;
+            }
+            
+            .name {
+              text-transform: uppercase;
+              border-bottom: 1px solid white;
+            }
+            .item {
+            	margin-bottom: 1em;
+            }
+            
+            .small-header {
+              display: block;
+            }
+              
+            .big-header {
+              display: none;
+            }
+        </style>
+    </head>
+    
+    <body>
+        <div id="resume" class="container-fluid">
+            <section id="header">
+                <div class="row">
+                    <img src="http://www.gravatar.com/avatar/0572f2d73025fd3009a79e7abee62b45?s=100&r=pg&d=mm"></img>
+                </div>
+                <div class="row">
+                     <h1 class="name col-sm-12">Jonathan Koppenhofer</h1>
+
+                     <h4 class="designation col-sm-12">Technologist</h4>
+
+                </div>
+                <div class="row media">
+                    <div id="profiles">
+                        <div class="media-item"> <a href="https://www.linkedin.com/in/jonathan-koppenhofer-934112a">LinkedIn</a>
+
+                        </div>
+                    </div>
+                    <div class="row contact">
+                        <ul>
+                            <li class="col-sm-4"> <span class="fa fa-envelope fa-2x"></span> jon@koppedomain.com</li>
+                            <li
+                            class="col-sm-4"> <span class="fa fa-phone fa-2x"></span> (614) 519-4755</li>
+                        </ul>
+                    </div>
+                    <div class="row location">
+                        <div class="col-sm-12"> <span class="fa fa-map-marker fa-2x"></span>
+ <span>
+				  5321 Redlands Dr
+				  43026
+				  Columbus
+				  US
+			      Ohio
+			  </span>
+
+                        </div>
+                    </div>
+            </section>
+            <section id="basics">
+                <div class="row summary"> <span class="fa fa-quote-left fa-2x"></span>
+ <span>Dedicated and self-motivated technologist focussed on career learning and delivering quantifiable value to business relationships. By following a method of first gaining trust, and then challenging the norm, I have found innovative ways to advance teams and grow as an individual. While dedicated to my craft, I believe in a strong work/life balance as it keeps me motivated and operating at high levels.</span>
+
+                    <span
+                    class="fa fa-quote-right fa-2x"></span>
+                </div>
+            </section>
+            <section id="work" class="row">
+                <div class="col-sm-3 section-info">W o r k</div>
+                <div class="col-sm-9">
+                    <div class="col-sm-12 work-item">
+                        <p class="col-sm-7"> <span class="work-position">VP - NoSQL Service Owner</span>,	<a href="https://chase.com">JP Morgan Chase</a>
+
+                        </p>
+                        <div class="col-sm-12 work-summary">
+                            <p>Service Owner for the Cassandra as a Service platform, and firmwide non-relational
+                                database SME for JP Morgan Chase. Pitched, funded, designed, built, and
+                                supported the Cassandra as a Service platform, and managed all processes
+                                end-to-end.</p>
+                        </div>
+                        <div class="col-sm-12 work-highlights">
+                            <ul>
+                                <li>Pitched the idea of a full Apache Cassandra platform as a service to executive
+                                    management to help solve the data management requirements for several use
+                                    cases within JP Morgan Chase globally. Garnered buy-in and commitment from
+                                    senior leaders in central technology and individual lines of business.</li>
+                                <li>Developed business case including charge back models to fund the operation
+                                    of the service and prove value. To date, 3 business cases have been approved
+                                    for the build and expansion of the platform, totalling ~$20MM in assets.
+                                    Dollar saves by centralizing the service is estimated at ~$8MM</li>
+                                <li>Initially acted as engineering lead to design software, automation, and
+                                    tooling to support the platform, enabling on-demand delivery with minimal
+                                    support personnel.</li>
+                                <li>Acting as resource and project manager for further implementation of the
+                                    platform. Platform and tooling is delivered in 2-week agile sprints.</li>
+                                <li>Currently fulfilling all roles within the project including business management,
+                                    operations, client engagement, training, risk and controls, and vendor
+                                    engagement. (Occasionally still find time to contribute technically and
+                                    operationally)</li>
+                                <li>Established a NoSQL Center of Excellence within JPMC. Seen as the foremost
+                                    expert in non-relational databases within JPMC</li>
+                                <li>Successfully passed internal database audit on the first attempt.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 work-item">
+                        <p class="col-sm-7"> <span class="work-position">VP - Lead Software Engineer</span>,	<a href="https://chase.com">JP Morgan Chase</a>
+
+                        </p>
+                        <div class="col-sm-12 work-summary">
+                            <p>Worked in a central technology organization called the Chief Development
+                                Office (CDO) to provide company-wide frameworks, and best practice software
+                                methodologies. Operated in many roles within the Chief Development Office
+                                including software developer, technical support, training content development,
+                                training content delivery, and implementation services consultant.</p>
+                        </div>
+                        <div class="col-sm-12 work-highlights">
+                            <ul>
+                                <li>As a senior consultant for the CDO Software Engineering Practice, developed
+                                    process and content for the implementation of software practices firm-wide
+                                    at JP Morgan Chase. Then implemented these software practices via documentation,
+                                    training, and development team engagements.</li>
+                                <li>Worked as a member of the FAST Implementation Team to engage development
+                                    teams within JP Morgan Chase to adopt firm-wide tooling and improve development
+                                    processes. Provided training and consulting services to ~20 teams in 1
+                                    year within this role</li>
+                                <li>Acted as a technical support lead for the FAST Application Stack (internal
+                                    JPMC application server). Was responsible for managing support cases up
+                                    to and including P1 support calls for some of the most critical applications
+                                    in the bank</li>
+                                <li>Software development lead for the FAST Application Stack.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 work-item">
+                        <p class="col-sm-7"> <span class="work-position">Software Engineer</span>, Sterling Commerce
+                            (AT&amp;T)</p>
+                        <div class="col-sm-12 work-summary">
+                            <p>Developer of software solutions for Sterling Commerce, a business ecommerce
+                                company now owned by IBM. Responsible for the design, creation, testing,
+                                deployment, and maintenance of applications to improve process in the company.</p>
+                        </div>
+                        <div class="col-sm-12 work-highlights">
+                            <ul>
+                                <li>Technical team lead for several applications used by the sales and finance/billing
+                                    organizations to improve processes and give greater visibility into our
+                                    customers needs and usage</li>
+                                <li>Worked with commercial product development teams to design and develop
+                                    customer facing applications to improve customer/user experience</li>
+                                <li>Standardized product development environment from an ad hoc development
+                                    shop to a fully process controlled environment. Configured environment
+                                    and trained development organization on CVS, Java, Jenkins, Maven, Nexus,
+                                    Jira, automated deployment, and standard software stack (java, struts,
+                                    jdo, jax-rs, etc)</li>
+                                <li>Gained a breadth of technology experience including, but not limited to
+                                    Java, Web Services, Spring, EJB, Portal (JSR-168), OSGI/Felix, JBoss/Tomcat,
+                                    SalesForce.com, CAS single-sign-on</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="education" class="row">
+                <div class="col-sm-3 section-info">E d u c a t i o n</div>
+                <div class="col-sm-9">
+                    <div class="col-sm-12 education-item">
+                        <p class="col-sm-7"> <span class="education-institution fa fa-university">Capital University</span>
+
+                        </p>
+                        <p class="col-sm-5 duration"> <span class="fa fa-clock-o"></span>
+1996-08-01 -- 2000-05-01</p>
+                        <div class="col-sm-12 education-subject">
+                            <p> <span class="bold">Area :</span> Computer Science &amp; Mathematics |
+                                <span
+                                class="bold">Level :</span>Bachelor | <span class="bold">GPA :</span> 3.9/4.0</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="awards" class="row">
+                <div class="col-sm-3 section-info small-header">A w a r d s</div>
+                <div class="col-sm-9">
+                    <div class="col-sm-12 award-item">
+                        <p class="col-sm-7"> <span class="award-title">JP Morgan Chase Expert Engineer</span>
+by</p>
+                        <p
+                        class="col-sm-5 award-date"> <span class="fa fa-clock-o"></span>
+2013-05</p>
+                            <div class="col-sm-12 award-summary">The Expert Engineer Program is a year long training program designed to
+                                further develop JP Morgan Chase&#x27;s top engineers (roughly the top 1%).</div>
+                    </div>
+                    <div class="col-sm-12 award-item">
+                        <p class="col-sm-7"> <span class="award-title">Software Architecture: Principles and Practices (Software Engineering Institute – Carnegie Mellon)</span>
+by</p>
+                        <p
+                        class="col-sm-5 award-date"> <span class="fa fa-clock-o"></span>
+2012-07</p>
+                    </div>
+                    <div class="col-sm-12 award-item">
+                        <p class="col-sm-7"> <span class="award-title">Member of the Alpha Chi Academic Honorary society</span>
+by</p>
+                        <p
+                        class="col-sm-5 award-date"> <span class="fa fa-clock-o"></span>
+2000-05</p>
+                    </div>
+                </div>
+                <div class="col-sm-3 section-info big-header">A w a r d s</div>
+            </section>
+            <section id="skills" class="row">
+                <div class="col-sm-3 section-info small-header">S k i l l s</div>
+                <div class="col-sm-9">
+                    <table class="table table-hover">
+                        <tr class="skills-header">
+                            <th>Skill</th>
+                            <th>Level</th>
+                            <th>Specifics</th>
+                        </tr>
+                        <tr class="skills-rows">
+                            <td class="bold">Operational Management</td>
+                            <td>Advanced</td>
+                            <td>Technical Support, Customer Engagement, Training Development and Delivery,
+                                Security and Controls</td>
+                        </tr>
+                        <tr class="skills-rows">
+                            <td class="bold">Project/Product Management</td>
+                            <td>Advanced</td>
+                            <td>Product Roadmaps and Planning, Budget and Finance Management, Platform
+                                Delivery (Agile), Requirement gathering and prioritization</td>
+                        </tr>
+                        <tr class="skills-rows">
+                            <td class="bold">Technical</td>
+                            <td>Master</td>
+                            <td>Java (ecosystem), Cassandra/NoSQL/BigData, Software/Infrastructure Architecture
+                                and Design, Software Development Tools (Git, Jira, Jenkins, Sonar, etc)</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="col-sm-3 section-info big-header">S k i l l s</div>
+            </section>
+            <section id="languages" class="row">
+                <div class="col-sm-3 section-info">L a n g u a g e s</div>
+                <div class="col-sm-9">
+                    <div class="col-sm-12 lang-item"> <span class="lang-name fa fa-language"> English</span>
+ <span class="lang-fluency fa fa-ellipsis-h">   Native speaker</span>
+
+                    </div>
+                </div>
+            </section>
+            </div>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    </body>
+
+</html>

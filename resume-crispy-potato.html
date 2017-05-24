@@ -1,0 +1,921 @@
+<!doctype html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Jonathan Koppenhofer</title>
+        <link href="https://jsonresume.org/favicon.png"
+        rel="shortcut icon">
+        <script src="https://use.fontawesome.com/ac952219e9.js"></script>
+        <style>
+            /*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+            /**
+             * 1. Change the default font family in all browsers (opinionated).
+             * 2. Correct the line height in all browsers.
+             * 3. Prevent adjustments of font size after orientation changes in IE and iOS.
+             */
+            @import url("https://fonts.googleapis.com/css?family=Asap:400,400italic,700,700italic");
+            @import url("https://fonts.googleapis.com/css?family=Noto+Serif:400,400italic,700,700italic");
+            html {
+              font-family: sans-serif;
+              /* 1 */
+              line-height: 1.15;
+              /* 2 */
+              -ms-text-size-adjust: 100%;
+              /* 3 */
+              -webkit-text-size-adjust: 100%;
+              /* 3 */ }
+            
+            /**
+             * Remove the margin in all browsers (opinionated).
+             */
+            body {
+              margin: 0; }
+            
+            /* HTML5 display definitions
+               ========================================================================== */
+            /**
+             * Add the correct display in IE 9-.
+             * 1. Add the correct display in Edge, IE, and Firefox.
+             * 2. Add the correct display in IE.
+             */
+            article,
+            aside,
+            details,
+            figcaption,
+            figure,
+            footer,
+            header,
+            main,
+            menu,
+            nav,
+            section,
+            summary {
+              /* 1 */
+              display: block; }
+            
+            /**
+             * Add the correct display in IE 9-.
+             */
+            audio,
+            canvas,
+            progress,
+            video {
+              display: inline-block; }
+            
+            /**
+             * Add the correct display in iOS 4-7.
+             */
+            audio:not([controls]) {
+              display: none;
+              height: 0; }
+            
+            /**
+             * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+             */
+            progress {
+              vertical-align: baseline; }
+            
+            /**
+             * Add the correct display in IE 10-.
+             * 1. Add the correct display in IE.
+             */
+            template,
+            [hidden] {
+              display: none; }
+            
+            /* Links
+               ========================================================================== */
+            /**
+             * 1. Remove the gray background on active links in IE 10.
+             * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+             */
+            a {
+              background-color: transparent;
+              /* 1 */
+              -webkit-text-decoration-skip: objects;
+              /* 2 */ }
+            
+            /**
+             * Remove the outline on focused links when they are also active or hovered
+             * in all browsers (opinionated).
+             */
+            a:active,
+            a:hover {
+              outline-width: 0; }
+            
+            /* Text-level semantics
+               ========================================================================== */
+            /**
+             * 1. Remove the bottom border in Firefox 39-.
+             * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+             */
+            abbr[title] {
+              border-bottom: none;
+              /* 1 */
+              text-decoration: underline;
+              /* 2 */
+              text-decoration: underline dotted;
+              /* 2 */ }
+            
+            /**
+             * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+             */
+            b,
+            strong {
+              font-weight: inherit; }
+            
+            /**
+             * Add the correct font weight in Chrome, Edge, and Safari.
+             */
+            b,
+            strong {
+              font-weight: bolder; }
+            
+            /**
+             * Add the correct font style in Android 4.3-.
+             */
+            dfn {
+              font-style: italic; }
+            
+            /**
+             * Correct the font size and margin on `h1` elements within `section` and
+             * `article` contexts in Chrome, Firefox, and Safari.
+             */
+            h1 {
+              font-size: 2em;
+              margin: 0.67em 0; }
+            
+            /**
+             * Add the correct background and color in IE 9-.
+             */
+            mark {
+              background-color: #ff0;
+              color: #000; }
+            
+            /**
+             * Add the correct font size in all browsers.
+             */
+            small {
+              font-size: 80%; }
+            
+            /**
+             * Prevent `sub` and `sup` elements from affecting the line height in
+             * all browsers.
+             */
+            sub,
+            sup {
+              font-size: 75%;
+              line-height: 0;
+              position: relative;
+              vertical-align: baseline; }
+            
+            sub {
+              bottom: -0.25em; }
+            
+            sup {
+              top: -0.5em; }
+            
+            /* Embedded content
+               ========================================================================== */
+            /**
+             * Remove the border on images inside links in IE 10-.
+             */
+            img {
+              border-style: none; }
+            
+            /**
+             * Hide the overflow in IE.
+             */
+            svg:not(:root) {
+              overflow: hidden; }
+            
+            /* Grouping content
+               ========================================================================== */
+            /**
+             * 1. Correct the inheritance and scaling of font size in all browsers.
+             * 2. Correct the odd `em` font sizing in all browsers.
+             */
+            code,
+            kbd,
+            pre,
+            samp {
+              font-family: monospace, monospace;
+              /* 1 */
+              font-size: 1em;
+              /* 2 */ }
+            
+            /**
+             * Add the correct margin in IE 8.
+             */
+            figure {
+              margin: 1em 40px; }
+            
+            /**
+             * 1. Add the correct box sizing in Firefox.
+             * 2. Show the overflow in Edge and IE.
+             */
+            hr {
+              box-sizing: content-box;
+              /* 1 */
+              height: 0;
+              /* 1 */
+              overflow: visible;
+              /* 2 */ }
+            
+            /* Forms
+               ========================================================================== */
+            /**
+             * 1. Change font properties to `inherit` in all browsers (opinionated).
+             * 2. Remove the margin in Firefox and Safari.
+             */
+            button,
+            input,
+            optgroup,
+            select,
+            textarea {
+              font: inherit;
+              /* 1 */
+              margin: 0;
+              /* 2 */ }
+            
+            /**
+             * Restore the font weight unset by the previous rule.
+             */
+            optgroup {
+              font-weight: bold; }
+            
+            /**
+             * Show the overflow in IE.
+             * 1. Show the overflow in Edge.
+             */
+            button,
+            input {
+              /* 1 */
+              overflow: visible; }
+            
+            /**
+             * Remove the inheritance of text transform in Edge, Firefox, and IE.
+             * 1. Remove the inheritance of text transform in Firefox.
+             */
+            button,
+            select {
+              /* 1 */
+              text-transform: none; }
+            
+            /**
+             * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+             *    controls in Android 4.
+             * 2. Correct the inability to style clickable types in iOS and Safari.
+             */
+            button,
+            html [type="button"],
+            [type="reset"],
+            [type="submit"] {
+              -webkit-appearance: button;
+              /* 2 */ }
+            
+            /**
+             * Remove the inner border and padding in Firefox.
+             */
+            button::-moz-focus-inner,
+            [type="button"]::-moz-focus-inner,
+            [type="reset"]::-moz-focus-inner,
+            [type="submit"]::-moz-focus-inner {
+              border-style: none;
+              padding: 0; }
+            
+            /**
+             * Restore the focus styles unset by the previous rule.
+             */
+            button:-moz-focusring,
+            [type="button"]:-moz-focusring,
+            [type="reset"]:-moz-focusring,
+            [type="submit"]:-moz-focusring {
+              outline: 1px dotted ButtonText; }
+            
+            /**
+             * Change the border, margin, and padding in all browsers (opinionated).
+             */
+            fieldset {
+              border: 1px solid #c0c0c0;
+              margin: 0 2px;
+              padding: 0.35em 0.625em 0.75em; }
+            
+            /**
+             * 1. Correct the text wrapping in Edge and IE.
+             * 2. Correct the color inheritance from `fieldset` elements in IE.
+             * 3. Remove the padding so developers are not caught out when they zero out
+             *    `fieldset` elements in all browsers.
+             */
+            legend {
+              box-sizing: border-box;
+              /* 1 */
+              color: inherit;
+              /* 2 */
+              display: table;
+              /* 1 */
+              max-width: 100%;
+              /* 1 */
+              padding: 0;
+              /* 3 */
+              white-space: normal;
+              /* 1 */ }
+            
+            /**
+             * Remove the default vertical scrollbar in IE.
+             */
+            textarea {
+              overflow: auto; }
+            
+            /**
+             * 1. Add the correct box sizing in IE 10-.
+             * 2. Remove the padding in IE 10-.
+             */
+            [type="checkbox"],
+            [type="radio"] {
+              box-sizing: border-box;
+              /* 1 */
+              padding: 0;
+              /* 2 */ }
+            
+            /**
+             * Correct the cursor style of increment and decrement buttons in Chrome.
+             */
+            [type="number"]::-webkit-inner-spin-button,
+            [type="number"]::-webkit-outer-spin-button {
+              height: auto; }
+            
+            /**
+             * 1. Correct the odd appearance in Chrome and Safari.
+             * 2. Correct the outline style in Safari.
+             */
+            [type="search"] {
+              -webkit-appearance: textfield;
+              /* 1 */
+              outline-offset: -2px;
+              /* 2 */ }
+            
+            /**
+             * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+             */
+            [type="search"]::-webkit-search-cancel-button,
+            [type="search"]::-webkit-search-decoration {
+              -webkit-appearance: none; }
+            
+            /**
+             * Correct the text style of placeholders in Chrome, Edge, and Safari.
+             */
+            ::-webkit-input-placeholder {
+              color: inherit;
+              opacity: 0.54; }
+            
+            /**
+             * 1. Correct the inability to style clickable types in iOS and Safari.
+             * 2. Change font properties to `inherit` in Safari.
+             */
+            ::-webkit-file-upload-button {
+              -webkit-appearance: button;
+              /* 1 */
+              font: inherit;
+              /* 2 */ }
+            
+            .item h3,
+            .item h4 {
+              font-size: 1rem;
+              line-height: 1.5;
+              margin-bottom: 0;
+              font-family: "Asap"; }
+              .item h3 .level,
+              .item h4 .level {
+                font-size: .7rem;
+                color: rgba(0, 0, 0, 0.54); }
+            
+            .item .column,
+            .item .columns {
+              margin-bottom: 1rem; }
+            
+            .item .row {
+              margin-bottom: 1rem; }
+              .item .row.no-padding {
+                margin-bottom: 0; }
+            
+            main > .row {
+              margin-bottom: 1rem; }
+            
+            main > .row:last-child {
+              margin-bottom: 0rem; }
+              main > .row:last-child .columns:last-child,
+              main > .row:last-child .column:last-child {
+                margin-bottom: 0; }
+            
+            @media print {
+              .item .row {
+                margin: 0 0 1rem; } }
+            
+            html {
+              box-sizing: border-box; }
+            
+            ::selection {
+              background-color: #880E4F;
+              color: #fff; }
+            
+            *,
+            *:after,
+            *:before {
+              box-sizing: inherit; }
+            
+            body {
+              background-color: #fafafa;
+              background-image: url("http://subtlepatterns2015.subtlepatterns.netdna-cdn.com/patterns/school.png");
+              margin: 1rem; }
+            
+            .content {
+              padding: 2rem;
+              background-color: #fff;
+              border: 1px solid #f5f5f5;
+              margin-bottom: 1rem; }
+            
+            .content:last-child {
+              margin-bottom: 0; }
+            
+            @media (min-width: 700px) {
+              .content {
+                padding: 4rem; } }
+            
+            @page {
+              margin: 25mm 25mm 25mm 25mm; }
+            
+            @media print {
+              body {
+                background-image: none;
+                padding: 0;
+                margin: 0; }
+              .content {
+                border: none;
+                padding: 0  0 2rem;
+                margin: 0; }
+              article {
+                page-break-inside: avoid; } }
+            
+            /*
+            * Skeleton V2.0.4
+            * Copyright 2014, Dave Gamache
+            * www.getskeleton.com
+            * Free to use under the MIT license.
+            * http://www.opensource.org/licenses/mit-license.php
+            * 12/9/2014
+            * Sass Version by Seth Coelen https://github.com/whatsnewsaes
+            */
+            .container {
+              position: relative;
+              width: 100%;
+              max-width: 960px;
+              margin-left: auto;
+              margin-right: auto;
+              box-sizing: border-box; }
+            
+            .column,
+            .columns {
+              width: 100%;
+              float: left;
+              box-sizing: border-box; }
+            
+            @media print, (min-width: 700px) {
+              .column,
+              .columns {
+                margin-left: 4%;
+                margin-bottom: 0; }
+              .column:first-child,
+              .columns:first-child {
+                margin-left: 0; }
+              .one.column,
+              .one.columns {
+                width: 4.66667%; }
+              .two.columns {
+                width: 13.33333%; }
+              .three.columns {
+                width: 22%; }
+              .four.columns {
+                width: 30.66667%; }
+              .five.columns {
+                width: 39.33333%; }
+              .six.columns {
+                width: 48%; }
+              .seven.columns {
+                width: 56.66667%; }
+              .eight.columns {
+                width: 65.33333%; }
+              .nine.columns {
+                width: 74%; }
+              .ten.columns {
+                width: 82.66667%; }
+              .eleven.columns {
+                width: 91.33333%; }
+              .twelve.columns {
+                width: 100%;
+                margin-left: 0; }
+              .one-third.column {
+                width: 30.66667%; }
+              .two-thirds.column {
+                width: 65.33333%; }
+              .one-half.column {
+                width: 48%; }
+              .offset-by-one.column,
+              .offset-by-one.columns {
+                margin-left: 8.66667%; }
+              .offset-by-two.column,
+              .offset-by-two.columns {
+                margin-left: 17.33333%; }
+              .offset-by-three.column,
+              .offset-by-three.columns {
+                margin-left: 26%; }
+              .offset-by-four.column,
+              .offset-by-four.columns {
+                margin-left: 34.66667%; }
+              .offset-by-five.column,
+              .offset-by-five.columns {
+                margin-left: 43.33333%; }
+              .offset-by-six.column,
+              .offset-by-six.columns {
+                margin-left: 52%; }
+              .offset-by-seven.column,
+              .offset-by-seven.columns {
+                margin-left: 60.66667%; }
+              .offset-by-eight.column,
+              .offset-by-eight.columns {
+                margin-left: 69.33333%; }
+              .offset-by-nine.column,
+              .offset-by-nine.columns {
+                margin-left: 78%; }
+              .offset-by-ten.column,
+              .offset-by-ten.columns {
+                margin-left: 86.66667%; }
+              .offset-by-eleven.column,
+              .offset-by-eleven.columns {
+                margin-left: 95.33333%; }
+              .offset-by-one-third.column,
+              .offset-by-one-third.columns {
+                margin-left: 34.66667%; }
+              .offset-by-two-thirds.column,
+              .offset-by-two-thirds.columns {
+                margin-left: 69.33333%; }
+              .offset-by-one-half.column,
+              .offset-by-one-half.column {
+                margin-left: 52%; } }
+            
+            .container:after,
+            .row:after,
+            .u-cf {
+              content: "";
+              display: table;
+              clear: both; }
+            
+            #cv-image {
+              margin: 0 auto 1rem;
+              max-width: 50%;
+              display: block; }
+            
+            #area {
+              color: #880E4F;
+              margin: 1rem 0; }
+            
+            #summary {
+              margin-top: 1rem; }
+            
+            @media print, (min-width: 700px) {
+              #cv-image {
+                margin: 0;
+                width: 13rem;
+                display: inline-block;
+                float: right; } }
+            
+            img {
+              max-width: 100%;
+              width: 100%;
+              border-radius: 100%; }
+            
+            #languages p {
+              margin-bottom: 0; }
+            
+            ul {
+              padding: 0;
+              margin-left: 1.5rem;
+              margin-top: 0;
+              margin-bottom: 0;
+              list-style: outside; }
+              ul li {
+                padding-left: .5rem; }
+            
+            .unstyled {
+              list-style-type: none;
+              margin: 0; }
+              .unstyled li {
+                padding: 0; }
+            
+            #skills ul {
+              margin-bottom: 0; }
+            
+            html {
+              font-size: 14px; }
+            
+            body {
+              font-family: "Asap", Arial, Helvetica, sans-serif;
+              font-size: 1rem;
+              letter-spacing: .05rem;
+              line-height: 1.5rem;
+              color: rgba(0, 0, 0, 0.87);
+              text-align: left; }
+            
+            p {
+              margin: 0 0 1rem; }
+            
+            @media (min-width: 700px) {
+              html {
+                font-size: 18px; } }
+            
+            .fa {
+              min-width: 1.75rem; }
+            
+            a {
+              text-decoration: none;
+              color: #880E4F; }
+              a:hover {
+                color: rgba(0, 0, 0, 0.87); }
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+              margin: 0;
+              line-height: 1;
+              font-family: "Noto Serif", Georgia, Times, serif;
+              font-weight: normal;
+              margin-bottom: 1rem;
+              color: #880E4F; }
+            
+            h1 {
+              font-size: 3rem; }
+            
+            h2 {
+              font-size: 2rem; }
+            
+            h3 {
+              font-size: 1.5rem; }
+            
+            h4 {
+              font-size: 1.25rem; }
+            
+            h5 {
+              font-size: 1rem; }
+            
+            h6 {
+              font-size: 1rem; }
+            
+            .impact {
+              font-size: 1.2rem; }
+        </style>
+    </head>
+    
+    <body>
+        <header class="container content">
+            <div class="row">
+                <!-- BASIC INFORMATION -->
+                <div class="twelve columns">
+                    <img src="profile.jpg" alt="CV image" id="cv-image">
+                     <h1>Jonathan Koppenhofer</h1>
+                    <div class="impact">Technologist</div>
+                    <div id="area"> <i class="fa fa-map-marker" aria-hidden="true"></i>Ohio, US</div>
+                    <ul class="unstyled">
+                        <li> <strong>
+
+                  Email
+
+                </strong> jon@koppedomain.com</li>
+                        <li> <strong>
+
+                  Phone
+
+                </strong> (614) 519-4755</li>
+                        <li> <strong>
+
+                    Address
+
+                  </strong> 5321 Redlands Dr, 43026 Columbus</li>
+                    </ul>
+                </div>
+                <div class="twelve columns">
+                    <p id="summary">Dedicated and self-motivated technologist focussed on career learning
+                        and delivering quantifiable value to business relationships. By following
+                        a method of first gaining trust, and then challenging the norm, I have
+                        found innovative ways to advance teams and grow as an individual. While
+                        dedicated to my craft, I believe in a strong work/life balance as it keeps
+                        me motivated and operating at high levels.</p>
+                </div>
+                <div class="twelve columns">
+                    <ul class="unstyled">
+                        <li> <a href="https://www.linkedin.com/in/jonathan-koppenhofer-934112a" target="_blank">
+
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>@Jonathan Koppenhofer
+
+                  </a>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /BASIC INFOMATION -->
+            </div>
+        </header>
+        <main class="container content">
+            <!-- WORK -->
+            <section class="row">
+                <div id="work" class="twelve columns item">
+                     <h2>Experience</h2>
+                    <article class="row">
+                        <header class="four columns">
+                             <h3>
+
+                      <a href="https://chase.com" target="_blank">JP Morgan Chase</a>
+
+                  </h3> <strong>VP - NoSQL Service Owner</strong>
+                            <br>Since Aug. 2013</header>
+                        <div class="eight columns">
+                            <p>Service Owner for the Cassandra as a Service platform, and firmwide non-relational
+                                database SME for JP Morgan Chase. Pitched, funded, designed, built, and
+                                supported the Cassandra as a Service platform, and managed all processes
+                                end-to-end.</p>
+                            <ul>
+                                <li>Pitched the idea of a full Apache Cassandra platform as a service to executive
+                                    management to help solve the data management requirements for several use
+                                    cases within JP Morgan Chase globally. Garnered buy-in and commitment from
+                                    senior leaders in central technology and individual lines of business.</li>
+                                <li>Developed business case including charge back models to fund the operation
+                                    of the service and prove value. To date, 3 business cases have been approved
+                                    for the build and expansion of the platform, totalling ~$20MM in assets.
+                                    Dollar saves by centralizing the service is estimated at ~$8MM</li>
+                                <li>Initially acted as engineering lead to design software, automation, and
+                                    tooling to support the platform, enabling on-demand delivery with minimal
+                                    support personnel.</li>
+                                <li>Acting as resource and project manager for further implementation of the
+                                    platform. Platform and tooling is delivered in 2-week agile sprints.</li>
+                                <li>Currently fulfilling all roles within the project including business management,
+                                    operations, client engagement, training, risk and controls, and vendor
+                                    engagement. (Occasionally still find time to contribute technically and
+                                    operationally)</li>
+                                <li>Established a NoSQL Center of Excellence within JPMC. Seen as the foremost
+                                    expert in non-relational databases within JPMC</li>
+                                <li>Successfully passed internal database audit on the first attempt.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <header class="four columns">
+                             <h3>
+
+                      <a href="https://chase.com" target="_blank">JP Morgan Chase</a>
+
+                  </h3> <strong>VP - Lead Software Engineer</strong>
+                            <br>Aug. 2010 &ndash; July 2013</header>
+                        <div class="eight columns">
+                            <p>Worked in a central technology organization called the Chief Development
+                                Office (CDO) to provide company-wide frameworks, and best practice software
+                                methodologies. Operated in many roles within the Chief Development Office
+                                including software developer, technical support, training content development,
+                                training content delivery, and implementation services consultant.</p>
+                            <ul>
+                                <li>As a senior consultant for the CDO Software Engineering Practice, developed
+                                    process and content for the implementation of software practices firm-wide
+                                    at JP Morgan Chase. Then implemented these software practices via documentation,
+                                    training, and development team engagements.</li>
+                                <li>Worked as a member of the FAST Implementation Team to engage development
+                                    teams within JP Morgan Chase to adopt firm-wide tooling and improve development
+                                    processes. Provided training and consulting services to ~20 teams in 1
+                                    year within this role</li>
+                                <li>Acted as a technical support lead for the FAST Application Stack (internal
+                                    JPMC application server). Was responsible for managing support cases up
+                                    to and including P1 support calls for some of the most critical applications
+                                    in the bank</li>
+                                <li>Software development lead for the FAST Application Stack.</li>
+                            </ul>
+                        </div>
+                    </article>
+                    <article class="row">
+                        <header class="four columns">
+                             <h3>
+
+                      Sterling Commerce (AT&amp;T)
+
+                  </h3> <strong>Software Engineer</strong>
+                            <br>May 2000 &ndash; Aug. 2010</header>
+                        <div class="eight columns">
+                            <p>Developer of software solutions for Sterling Commerce, a business ecommerce
+                                company now owned by IBM. Responsible for the design, creation, testing,
+                                deployment, and maintenance of applications to improve process in the company.</p>
+                            <ul>
+                                <li>Technical team lead for several applications used by the sales and finance/billing
+                                    organizations to improve processes and give greater visibility into our
+                                    customers needs and usage</li>
+                                <li>Worked with commercial product development teams to design and develop
+                                    customer facing applications to improve customer/user experience</li>
+                                <li>Standardized product development environment from an ad hoc development
+                                    shop to a fully process controlled environment. Configured environment
+                                    and trained development organization on CVS, Java, Jenkins, Maven, Nexus,
+                                    Jira, automated deployment, and standard software stack (java, struts,
+                                    jdo, jax-rs, etc)</li>
+                                <li>Gained a breadth of technology experience including, but not limited to
+                                    Java, Web Services, Spring, EJB, Portal (JSR-168), OSGI/Felix, JBoss/Tomcat,
+                                    SalesForce.com, CAS single-sign-on</li>
+                            </ul>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <!-- /WORK -->
+            <!-- EDUCATION -->
+            <section class="row">
+                <div id="education" class="twelve columns item">
+                     <h2>Education</h2>
+                    <article class="row">
+                        <header class="twelve columns">
+                             <h3>Capital University</h3> <strong>Computer Science &amp; Mathematics</strong>
+                            <br>Bachelor
+                            <br>Aug. 1996 &ndash; May 2000</header>
+                    </article>
+                </div>
+            </section>
+            <!-- /EDUCATION -->
+            <!-- SKILLS -->
+            <section class="row">
+                <div id="skills" class="twelve columns item">
+                     <h2>Skills</h2>
+                    <div class="row no-padding">
+                        <article class="four columns">
+                             <h3>
+
+                Operational Management
+
+                  <span class="level">(Advanced)</span>
+
+              </h3>
+                            <ul>
+                                <li>Technical Support</li>
+                                <li>Customer Engagement</li>
+                                <li>Training Development and Delivery</li>
+                                <li>Security and Controls</li>
+                            </ul>
+                        </article>
+                        <article class="four columns">
+                             <h3>
+
+                Project/Product Management
+
+                  <span class="level">(Advanced)</span>
+
+              </h3>
+                            <ul>
+                                <li>Product Roadmaps and Planning</li>
+                                <li>Budget and Finance Management</li>
+                                <li>Platform Delivery (Agile)</li>
+                                <li>Requirement gathering and prioritization</li>
+                            </ul>
+                        </article>
+                        <article class="four columns">
+                             <h3>
+
+                Technical
+
+                  <span class="level">(Master)</span>
+
+              </h3>
+                            <ul>
+                                <li>Java (ecosystem)</li>
+                                <li>Cassandra/NoSQL/BigData</li>
+                                <li>Software/Infrastructure Architecture and Design</li>
+                                <li>Software Development Tools (Git, Jira, Jenkins, Sonar, etc)</li>
+                            </ul>
+                        </article>
+                    </div>
+                </div>
+            </section>
+            <!-- /SKILLS -->
+            <!-- LANGUAGES -->
+            <section class="row">
+                <div id="languages" class="twelve columns item">
+                     <h2>Languages</h2>
+                    <div class="row no-padding">
+                        <article class="four columns">
+                             <h3>English</h3>
+                            <p>Native speaker</p>
+                        </article>
+                    </div>
+            </section>
+            <!-- /LANGUAGES -->
+            <!-- INTERESTS -->
+            <!-- /INTERESTS -->
+        </main>
+    </body>
+
+</html>

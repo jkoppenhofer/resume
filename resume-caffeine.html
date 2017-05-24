@@ -1,0 +1,611 @@
+<!doctype html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+        <title>Jonathan Koppenhofer</title>
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        rel="stylesheet">
+        <style>
+            /* Utils */
+            /*----- Colors -----*/
+            /*----- Fonts -----*/
+            /*----- Dimensions and sizes -----*/
+            /* Base */
+            @font-face {
+              font-family: 'Josefin Sans';
+              font-style: normal;
+              font-weight: 300;
+              src: local('Josefin Sans Light'), local('JosefinSans-Light'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04zwV_pQ1T3xN3K1c3sB361us.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Josefin Sans';
+              font-style: normal;
+              font-weight: 700;
+              src: local('Josefin Sans Bold'), local('JosefinSans-Bold'), url(https://fonts.gstatic.com/s/josefinsans/v9/C6HYlRF50SGJq1XyXj04z306qf9KHRHwsVx7iw5MXmY.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 300;
+              src: local('Lato Light'), local('Lato-Light'), url(https://fonts.gstatic.com/s/lato/v11/nj47mAZe0mYUIySgfn0wpQ.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 400;
+              src: local('Lato Regular'), local('Lato-Regular'), url(https://fonts.gstatic.com/s/lato/v11/v0SdcGFAl2aezM9Vq_aFTQ.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: normal;
+              font-weight: 700;
+              src: local('Lato Bold'), local('Lato-Bold'), url(https://fonts.gstatic.com/s/lato/v11/DvlFBScY1r-FMtZSYIYoYw.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: italic;
+              font-weight: 300;
+              src: local('Lato Light Italic'), local('Lato-LightItalic'), url(https://fonts.gstatic.com/s/lato/v11/2HG_tEPiQ4Z6795cGfdivKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: italic;
+              font-weight: 400;
+              src: local('Lato Italic'), local('Lato-Italic'), url(https://fonts.gstatic.com/s/lato/v11/LqowQDslGv4DmUBAfWa2Vw.ttf) format('truetype');
+            }
+            @font-face {
+              font-family: 'Lato';
+              font-style: italic;
+              font-weight: 700;
+              src: local('Lato Bold Italic'), local('Lato-BoldItalic'), url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYEKCWcynf_cDxXwCLxiixG1c.ttf) format('truetype');
+            }
+            
+            body {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 400;
+              background: #f8f8f8;
+              margin: 50px 0 100px;
+              letter-spacing: .3px;
+              color: #39424B; }
+            
+            h1, h2, h3, h4, h5, h6 {
+              text-transform: uppercase;
+              margin: 0; }
+            
+            h1 {
+              font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+              font-weight: 700;
+              font-size: 40px;
+              letter-spacing: 1px; }
+            
+            h2 {
+              font-family: "Josefin Sans", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              font-size: 16px;
+              letter-spacing: .5px; }
+            
+            h3 {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              font-size: 14px;
+              letter-spacing: .4px; }
+              h3.bold {
+                font-weight: 700; }
+            
+            h4 {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              font-size: 12px; }
+              h4.bold {
+                font-weight: 700; }
+            
+            h5 {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 300;
+              font-size: 11px; }
+              h5.italic {
+                font-style: italic; }
+            
+            h6 {
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 400;
+              font-size: 10px; }
+            
+            a {
+              color: inherit;
+              text-decoration: inherit; }
+              a:hover {
+                color: #2895F1; }
+              a .fa-external-link {
+                font-size: 10px;
+                vertical-align: text-top; }
+            
+            p,
+            li {
+              font-size: 11px; }
+            
+            blockquote {
+              font-size: 11px;
+              font-family: "Lato", Helvetica, Arial, sans-serif;
+              font-weight: 400;
+              font-style: italic;
+              margin: 10px 25px; }
+            
+            em {
+              color: #999; }
+            
+            ul {
+              margin: 10px 0 0;
+              -webkit-padding-start: 25px; }
+              ul li {
+                padding-left: 10px; }
+              ul.minimal {
+                list-style: none;
+                padding: 0; }
+                ul.minimal li {
+                  margin-bottom: 3px;
+                  padding-left: 0; }
+              ul.two-column {
+                -webkit-column-count: 2;
+                -webkit-column-gap: 28px;
+                -moz-column-count: 2;
+                     column-count: 2;
+                -moz-column-gap: 28px;
+                     column-gap: 28px; }
+                ul.two-column li {
+                  padding-left: 0; }
+            
+            @page {
+              size: A4; }
+            
+            .container {
+              padding-top: 20px; }
+            
+            .keyline {
+              width: 45px;
+              margin: 8px 0 10px;
+              border-top: 1px solid #56817A; }
+            
+            .pull-left {
+              float: left; }
+            
+            .pull-right {
+              float: right; }
+            
+            .clearfix:after {
+              content: "";
+              display: table;
+              clear: both; }
+            
+            .profile-pic {
+              margin-top: -5px;
+              margin-right: 18px; }
+              .profile-pic img {
+                height: 52px;
+                width: 52px;
+                border-radius: 50%;
+                border: 2px solid #56817A; }
+            
+            .summary {
+              margin: 5px 0 5px; }
+            
+            /* Layouts */
+            .page {
+              background: white;
+              width: 612px;
+              min-height: 792px;
+              display: block;
+              margin: 0 auto;
+              border-top: 10px solid #56817A;
+              padding: 36px 22px 30px 34px;
+              box-shadow: 0 1px 10px rgba(0, 0, 0, 0.5); }
+              .page:after {
+                content: "";
+                display: table;
+                clear: both; }
+            
+            .left-column {
+              float: left;
+              width: 160px;
+              margin-right: 20px;
+              word-wrap: break-word; }
+            
+            .right-column {
+              width: auto;
+              overflow: hidden; }
+            
+            .item {
+              margin-bottom: 15px; }
+              .item:last-child {
+                margin-bottom: 0; }
+            
+            @media print {
+              body {
+                margin: 0; }
+              .page {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 36px 0 30px;
+                box-shadow: none; }
+                .page .resume-header,
+                .page .resume-content {
+                  padding: 0 22px 0 34px; }
+              .container {
+                page-break-inside: avoid; }
+              .work-container .item {
+                page-break-inside: avoid; }
+              .fa-external-link {
+                display: none; } }
+            
+            /* Components */
+            .info-tag-container {
+              margin-bottom: 5px; }
+              .info-tag-container .fa {
+                font-size: 14px;
+                width: 12px;
+                margin-right: 5px;
+                text-align: center;
+                vertical-align: middle; }
+                .info-tag-container .fa.fa-map-marker {
+                  font-size: 16px; }
+                .info-tag-container .fa.fa-mobile {
+                  font-size: 18px; }
+                .info-tag-container .fa.fa-envelope-o {
+                  font-size: 12px; }
+                .info-tag-container .fa.fa-desktop {
+                  font-size: 11px; }
+                .info-tag-container .fa.fa-external-link {
+                  width: auto;
+                  font-size: inherit;
+                  vertical-align: text-top; }
+              .info-tag-container .info-text {
+                font-size: 9px;
+                display: inline-block;
+                vertical-align: middle;
+                width: 139px; }
+            
+            .references-container .fa {
+              font-size: 14px; }
+        </style>
+    </head>
+    
+    <body>
+        <main id="resume" class="page">
+            <header class="resume-header clearfix">
+                <div class="profile-header pull-left">
+                     <h1>Jonathan Koppenhofer</h1>
+
+                     <h2>Technologist</h2>
+
+                </div>
+                <div class="profile-pic pull-right">
+                    <img src="profile.jpg" alt="profile-pic">
+                </div>
+            </header>
+            <div class="resume-content">
+                <aside class="left-column">
+                    <div class="container about-container">
+                        <div class="title">
+                             <h3>About</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <div class="info-tag-container"> <i class="fa fa-map-marker"></i>
+
+                             <h6 class="info-text">5321 Redlands Dr<br/>Columbus Ohio 43026</h6>
+
+                        </div>
+                        <div class="info-tag-container"> <i class="fa fa-envelope-o"></i>
+
+                             <h6 class="info-text">jon@koppedomain.com</h6>
+
+                        </div>
+                        <div class="info-tag-container"> <i class="fa fa-mobile"></i>
+
+                             <h6 class="info-text">(614) 519-4755</h6>
+
+                        </div>
+                        <div class="info-tag-container"> <i class="fa fa-linkedin"></i>
+
+                             <h6 class="info-text">
+					                                     <a href="https://www.linkedin.com/in/jonathan-koppenhofer-934112a" target="_blank">
+					                                         Jonathan Koppenhofer <i class="fa fa-external-link" aria-hidden="true"></i>
+					                                     </a>
+					                                 </h6>
+
+                        </div>
+                        </section>
+                        <div class="skills-container">
+                            <section class="container">
+                                <div class="title">
+                                     <h3>Operational Management</h3>
+
+                                    <div class="keyline"></div>
+                                </div>
+                                 <h4 class="bold">Advanced</h4>
+
+                                <ul class="minimal">
+                                    <li>
+                                        <h6>Technical Support</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Customer Engagement</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Training Development and Delivery</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Security and Controls</h6>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="container">
+                                <div class="title">
+                                     <h3>Project/Product Management</h3>
+
+                                    <div class="keyline"></div>
+                                </div>
+                                 <h4 class="bold">Advanced</h4>
+
+                                <ul class="minimal">
+                                    <li>
+                                        <h6>Product Roadmaps and Planning</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Budget and Finance Management</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Platform Delivery (Agile)</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Requirement gathering and prioritization</h6>
+                                    </li>
+                                </ul>
+                            </section>
+                            <section class="container">
+                                <div class="title">
+                                     <h3>Technical</h3>
+
+                                    <div class="keyline"></div>
+                                </div>
+                                 <h4 class="bold">Master</h4>
+
+                                <ul class="minimal">
+                                    <li>
+                                        <h6>Java (ecosystem)</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Cassandra/NoSQL/BigData</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Software/Infrastructure Architecture and Design</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Software Development Tools (Git, Jira, Jenkins, Sonar, etc)</h6>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                        <div class="container languages-container">
+                            <div class="title">
+                                 <h3>Languages</h3>
+
+                                <div class="keyline"></div>
+                            </div>
+                            <ul class="minimal">
+                                <li>
+                                     <h6>English <em>(Native speaker)</em></h6>
+
+                                </li>
+                            </ul>
+                        </div>
+                </aside>
+                <div class="right-column">
+                    <div class="container summary-container">
+                        <div class="title">
+                             <h3>Summary</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <p class="summary">Dedicated and self-motivated technologist focussed on career learning
+                            and delivering quantifiable value to business relationships. By following
+                            a method of first gaining trust, and then challenging the norm, I have
+                            found innovative ways to advance teams and grow as an individual. While
+                            dedicated to my craft, I believe in a strong work/life balance as it keeps
+                            me motivated and operating at high levels.</p>
+                    </div>
+                    <div class="container work-container">
+                        <div class="title">
+                             <h3>Experience</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        <a href="https://chase.com" target="_blank">
+					                            JP Morgan Chase <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">08/2013</span>
+					                        <span class="endDate"> - Present</span>
+					                </h5>
+
+                            </div>
+                             <h4>VP - NoSQL Service Owner</h4>
+
+                            <p class="summary">Service Owner for the Cassandra as a Service platform, and firmwide non-relational
+                                database SME for JP Morgan Chase. Pitched, funded, designed, built, and
+                                supported the Cassandra as a Service platform, and managed all processes
+                                end-to-end.</p>
+                            <ul>
+                                <li>Pitched the idea of a full Apache Cassandra platform as a service to executive
+                                    management to help solve the data management requirements for several use
+                                    cases within JP Morgan Chase globally. Garnered buy-in and commitment from
+                                    senior leaders in central technology and individual lines of business.</li>
+                                <li>Developed business case including charge back models to fund the operation
+                                    of the service and prove value. To date, 3 business cases have been approved
+                                    for the build and expansion of the platform, totalling ~$20MM in assets.
+                                    Dollar saves by centralizing the service is estimated at ~$8MM</li>
+                                <li>Initially acted as engineering lead to design software, automation, and
+                                    tooling to support the platform, enabling on-demand delivery with minimal
+                                    support personnel.</li>
+                                <li>Acting as resource and project manager for further implementation of the
+                                    platform. Platform and tooling is delivered in 2-week agile sprints.</li>
+                                <li>Currently fulfilling all roles within the project including business management,
+                                    operations, client engagement, training, risk and controls, and vendor
+                                    engagement. (Occasionally still find time to contribute technically and
+                                    operationally)</li>
+                                <li>Established a NoSQL Center of Excellence within JPMC. Seen as the foremost
+                                    expert in non-relational databases within JPMC</li>
+                                <li>Successfully passed internal database audit on the first attempt.</li>
+                            </ul>
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        <a href="https://chase.com" target="_blank">
+					                            JP Morgan Chase <i class="fa fa-external-link" aria-hidden="true"></i>
+					                        </a>
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">08/2010</span>
+					                        <span class="endDate"> - 07/2013</span>
+					                </h5>
+
+                            </div>
+                             <h4>VP - Lead Software Engineer</h4>
+
+                            <p class="summary">Worked in a central technology organization called the Chief Development
+                                Office (CDO) to provide company-wide frameworks, and best practice software
+                                methodologies. Operated in many roles within the Chief Development Office
+                                including software developer, technical support, training content development,
+                                training content delivery, and implementation services consultant.</p>
+                            <ul>
+                                <li>As a senior consultant for the CDO Software Engineering Practice, developed
+                                    process and content for the implementation of software practices firm-wide
+                                    at JP Morgan Chase. Then implemented these software practices via documentation,
+                                    training, and development team engagements.</li>
+                                <li>Worked as a member of the FAST Implementation Team to engage development
+                                    teams within JP Morgan Chase to adopt firm-wide tooling and improve development
+                                    processes. Provided training and consulting services to ~20 teams in 1
+                                    year within this role</li>
+                                <li>Acted as a technical support lead for the FAST Application Stack (internal
+                                    JPMC application server). Was responsible for managing support cases up
+                                    to and including P1 support calls for some of the most critical applications
+                                    in the bank</li>
+                                <li>Software development lead for the FAST Application Stack.</li>
+                            </ul>
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        Sterling Commerce (AT&amp;T)
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">05/2000</span>
+					                        <span class="endDate"> - 08/2010</span>
+					                </h5>
+
+                            </div>
+                             <h4>Software Engineer</h4>
+
+                            <p class="summary">Developer of software solutions for Sterling Commerce, a business ecommerce
+                                company now owned by IBM. Responsible for the design, creation, testing,
+                                deployment, and maintenance of applications to improve process in the company.</p>
+                            <ul>
+                                <li>Technical team lead for several applications used by the sales and finance/billing
+                                    organizations to improve processes and give greater visibility into our
+                                    customers needs and usage</li>
+                                <li>Worked with commercial product development teams to design and develop
+                                    customer facing applications to improve customer/user experience</li>
+                                <li>Standardized product development environment from an ad hoc development
+                                    shop to a fully process controlled environment. Configured environment
+                                    and trained development organization on CVS, Java, Jenkins, Maven, Nexus,
+                                    Jira, automated deployment, and standard software stack (java, struts,
+                                    jdo, jax-rs, etc)</li>
+                                <li>Gained a breadth of technology experience including, but not limited to
+                                    Java, Web Services, Spring, EJB, Portal (JSR-168), OSGI/Felix, JBoss/Tomcat,
+                                    SalesForce.com, CAS single-sign-on</li>
+                            </ul>
+                        </section>
+                    </div>
+                    <div class="container education-container">
+                        <div class="title">
+                             <h3>Education</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        Capital University
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                        <span class="startDate">08/1996</span>
+					                        <span class="endDate"> - 05/2000</span>
+					                </h5>
+
+                            </div>
+                             <h4>Bachelor Computer Science &amp; Mathematics</h4>
+
+                             <h5>3.9/4.0</h5>
+
+                        </section>
+                    </div>
+                    <div class="container awards-container">
+                        <div class="title">
+                             <h3>Awards</h3>
+
+                            <div class="keyline"></div>
+                        </div>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        JP Morgan Chase Expert Engineer
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                </h5>
+
+                            </div>
+                            <p class="summary">The Expert Engineer Program is a year long training program designed to
+                                further develop JP Morgan Chase&#x27;s top engineers (roughly the top 1%).</p>
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        Software Architecture: Principles and Practices (Software Engineering Institute – Carnegie Mellon)
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                </h5>
+
+                            </div>
+                        </section>
+                        <section class="item">
+                            <div class="section-header clearfix">
+                                 <h3 class="bold pull-left">
+					                        Member of the Alpha Chi Academic Honorary society
+					                </h3>
+
+                                 <h5 class="italic pull-right">
+					                </h5>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                </div>
+        </main>
+    </body>
+
+</html>
