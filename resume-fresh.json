@@ -7,8 +7,9 @@
       "phone": "(614) 519-4755"
   },
   "info": {
-      "image": "coffee.jpg",
-      "brief": "Dedicated and self-motivated technologist focussed on doing the \"right thing\" for myself and others. My main career objective is to continue to learn while still providing value to my employeer. I believe in a strong work/life balance, but consider technology to be my hobby, and enjoy keeping current with the latest technology trends."
+      "image": "profile.jpg",
+      "label": "Technologist",
+      "brief": "Dedicated and self-motivated technologist focussed on career learning and delivering quantifiable value to business relationships. By following a method of first gaining trust, and then challenging the norm, I have found innovative ways to advance teams and grow as an individual. While dedicated to my craft, I believe in a strong work/life balance as it keeps me motivated and operating at high levels."
   },
   "meta": {
     "format": "FRESH@0.6.0",
@@ -26,17 +27,16 @@
       {
         "position": "VP - NoSQL Service Owner",
         "employer": "JP Morgan Chase",
-        "summary": "Service Owner for the Cassandra as a Service platform as a service, and firmwide non-relational database SME for JP Morgan Chase. Pitched, funded, designed, built, and supported the Cassandra as a Service platform, and managed all processes end-to-end.",
+        "summary": "Service Owner for the Cassandra as a Service platform, and firmwide non-relational database SME for JP Morgan Chase. Pitched, funded, designed, built, and supported the Cassandra as a Service platform, and managed all processes end-to-end.",
         "start": "2013-08-01",
-        "end": "Present",
         "url": "https://chase.com",
         "keywords": [],
         "highlights": [
-          "Pitched the idea of a full Apache Cassandra platform as a service to executive management to help solve the data management requirements for several use cases within JP Morgan Chase Globally. Got buy-in and commitment for senior leaders in central technology and individual lines of business.",
-          "Developed business case including charge back models to fund the operation of the service and prove value. To date, 3 business cases have been approved for the build and expansion of the platform, totalling ~$20MM in assets. To date, dollar saves by cenralizing the service is estimated at ~$8MM",
-          "Initailly acted as engineering lead to design software, automation, and tooling  to support the platform, enabling on-demand delivery with minimal support personelle.",
-          "Acting as resource and project manager for further implementaion of the platform. Platform and tooling is delivered in 2-week agile sprints.",
-          "Currently fulfilling all roles within the project including business management, operations, client engagement, training, risk and controls, and vendor engament. (Occasionally still find time to contribute technically and operationally)",
+          "Pitched the idea of a full Apache Cassandra platform as a service to executive management to help solve the data management requirements for several use cases within JP Morgan Chase globally. Garnered buy-in and commitment from senior leaders in central technology and individual lines of business.",
+          "Developed business case including charge back models to fund the operation of the service and prove value. To date, 3 business cases have been approved for the build and expansion of the platform, totalling ~$20MM in assets. Dollar saves by centralizing the service is estimated at ~$8MM",
+          "Initially acted as engineering lead to design software, automation, and tooling  to support the platform, enabling on-demand delivery with minimal support personnel.",
+          "Acting as resource and project manager for further implementation of the platform. Platform and tooling is delivered in 2-week agile sprints.",
+          "Currently fulfilling all roles within the project including business management, operations, client engagement, training, risk and controls, and vendor engagement. (Occasionally still find time to contribute technically and operationally)",
           "Established a NoSQL Center of Excellence within JPMC. Seen as the foremost expert in non-relational databases within JPMC",
           "Successfully passed internal database audit on the first attempt."
         ]
@@ -44,7 +44,7 @@
       {
         "position": "VP - Lead Software Engineer",
         "employer": "JP Morgan Chase",
-        "summary": "Worked in a central technology orginization called the Cheif Development Office (CDO) to provide company-wide frameworks, and best practice software methodologies. Operated in many roles within the Chief Development Office including software developer, technical support, training content development, training content delivery, and implementation services consultant.",
+        "summary": "Worked in a central technology organization called the Chief Development Office (CDO) to provide company-wide frameworks, and best practice software methodologies. Operated in many roles within the Chief Development Office including software developer, technical support, training content development, training content delivery, and implementation services consultant.",
         "start": "2010-08-16",
         "end": "2013-07-31",
         "url": "https://chase.com",
@@ -53,7 +53,7 @@
           "As a senior consultant for the CDO Software Engineering Practice, developed process and content for the implementation of software practices firm-wide at JP Morgan Chase. Then implemented these software practices via documentation, training, and development team engagements.",
           "Worked as a member of the FAST Implementation Team to engage development teams within JP Morgan Chase to adopt firm-wide tooling and improve development processes. Provided training and consulting services to ~20 teams in 1 year within this role",
           "Acted as a technical support lead for the FAST Application Stack (internal JPMC application server). Was responsible for managing support cases up to and including P1 support calls for some of the most critical applications in the bank",
-          "Sotware development lead for the FAST Application Stack."
+          "Software development lead for the FAST Application Stack."
         ]
       },
       {
@@ -65,10 +65,10 @@
         "url": "",
         "keywords": [],
         "highlights": [
-            "Technical team lead for several applications used by the sales and finance/billing orginizations to improve processes and give greater visibiity into our customers needs and usage",
+            "Technical team lead for several applications used by the sales and finance/billing organizations to improve processes and give greater visibility into our customers needs and usage",
             "Worked with commercial product development teams to design and develop customer facing applications to improve customer/user experience",
-            "Standardized product development environment from an adhoc development shop to a fully process controlled environment. Configured environment and trained development orginization on CVS, Java, Jenkins, Maven, Nexus, Jira, automated deployment, and standard software stack (java, struts, jdo, jax-rs, etc)",
-            "Gained a breadth of technology experience inlcuding, but not limited to Java, Webservices, Spring, EJB, Portal (JSR-168), OSGI/Felix, JBoss/Tomcat, SalesForce.com, CAS single-sign-on"
+            "Standardized product development environment from an ad hoc development shop to a fully process controlled environment. Configured environment and trained development organization on CVS, Java, Jenkins, Maven, Nexus, Jira, automated deployment, and standard software stack (java, struts, jdo, jax-rs, etc)",
+            "Gained a breadth of technology experience including, but not limited to Java, Web Services, Spring, EJB, Portal (JSR-168), OSGI/Felix, JBoss/Tomcat, SalesForce.com, CAS single-sign-on"
         ],
         "location": "Columbus, OH"
       }
@@ -105,7 +105,8 @@
         "skills": [
           "Technical Support",
           "Customer Engagement",
-          "Training"
+          "Training Development and Delivery",
+          "Security and Controls"
         ]
       },
       {
@@ -124,12 +125,12 @@
         "skills": [
           "Java (ecosystem)",
           "Cassandra/NoSQL/BigData",
+          "Software/Infrastructure Architecture and Design",
           "Software Development Tools (Git, Jira, Jenkins, Sonar, etc)"
         ]
       }
     ]
   },
-  "writing": [],
   "recognition": [
     {
       "title": "Member of the Alpha Chi Academic Honorary society",
@@ -141,11 +142,28 @@
     },
     {
       "title": "JP Morgan Chase Expert Engineer",
-      "summary": "The Expert Engineer Program is a year long training program designe to further develop JP Morgan Chase's top engineers (roughly the top 1%).",
+      "summary": "The Expert Engineer Program is a year long training program designed to further develop JP Morgan Chase's top engineers (roughly the top 1%).",
       "date": "2013-05"
     }
   ],
-  "social": [],
+  "social": [
+    {
+      "label": "LinkedIn",
+      "network": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jonathan-koppenhofer-934112a",
+      "user": "Jonathan Koppenhofer"
+    }
+  ],
+  "references": [
+    {"summary": "References provided upon request"}
+  ],
+  "disposition": {
+    "commitment": [
+      "permanent"
+    ],
+    "remote": true
+  },
+  "writing": [],
   "interests": [],
   "testimonials": [],
   "languages": [
@@ -155,3 +173,4 @@
     }
   ]
 }
+
