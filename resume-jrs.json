@@ -1,10 +1,10 @@
 {
   "basics": {
     "name": "Jonathan Koppenhofer",
-    "summary": "Dedicated and self-motivated technologist focussed on doing the \"right thing\" for myself and others. My main career objective is to continue to learn while still providing value to my employeer. I believe in a strong work/life balance, but consider technology to be my hobby, and enjoy keeping current with the latest technology trends.",
+    "summary": "Dedicated and self-motivated technologist and organizational leader focussed on doing the \"right thing\" to deliver high quality products. My main career objective is to continue to learn while still providing value to my employeer. I believe in a strong work/life balance, and consider technology to be my hobby, which helps me keep current with the latest technology trends.",
     "phone": "(614) 519-4755",
     "email": "jon@koppedomain.com",
-    "picture": "coffee.jpg",
+    "picture": "https://jon.koppedomain.com/profile3.jpg",
     "location": {
       "address": "5321 Redlands Dr",
       "postalCode": "43026",
@@ -18,46 +18,56 @@
     {
       "company": "JP Morgan Chase",
       "website": "https://chase.com",
-      "position": "VP - NoSQL Service Owner",
-      "startDate": "2013-08-01",
-      "endDate": "2017-07-01",
-      "summary": "Service Owner for the Cassandra as a Service platform as a service, and firmwide non-relational database SME for JP Morgan Chase. Pitched, funded, designed, built, and supported the Cassandra as a Service platform, and managed all processes end-to-end.",
+      "position": "Executive Director | Database Product Group Owner",
+      "startDate": "2019-07-01",
+      "endDate": "2023-12-05",
+      "summary": "Product Owner for a suite of database products including Cassandra, Microsoft SQL Server, IBM DB2, and Graph Databases. Responsible for the strategy, design, build, operate, risk/controls, financials, vendor management, customer engagement, and audit/compliance of the whole product suite.",
       "highlights": [
-        "Pitched the idea of a full Apache Cassandra platform as a service to executive management to help solve the data management requirements for several use cases within JP Morgan Chase Globally. Got buy-in and commitment for senior leaders in central technology and individual lines of business.",
-        "Developed business case including charge back models to fund the operation of the service and prove value. To date, 3 business cases have been approved for the build and expansion of the platform, totalling ~$20MM in assets. To date, dollar saves by cenralizing the service is estimated at ~$8MM",
-        "Initailly acted as engineering lead to design software, automation, and tooling  to support the platform, enabling on-demand delivery with minimal support personelle.",
-        "Acting as resource and project manager for further implementaion of the platform. Platform and tooling is delivered in 2-week agile sprints.",
-        "Currently fulfilling all roles within the project including business management, operations, client engagement, training, risk and controls, and vendor engament. (Occasionally still find time to contribute technically and operationally)",
-        "Established a NoSQL Center of Excellence within JPMC. Seen as the foremost expert in non-relational databases within JPMC",
-        "Successfully passed internal database audit on the first attempt."
+        "Responsible for all aspects of large complex database platforms that have deployed over 28,000 database instances for critical business systems",
+        "Engineered self-service innovatove platforms from the ground up to provision/manage/destroy databases on-demand.",
+        "Managed database financials with a cost/recovery of approximately $160M annually",
+        "Built a global organization of ~100 employees to engineer and operate databae platforms. Adopted agile engineering principals to manage the book of work and deliver modern products"
       ]
     },
     {
       "company": "JP Morgan Chase",
       "website": "https://chase.com",
-      "position": "VP - Lead Software Engineer",
+      "position": "Executive Director | Cassandra Product Owner",
+      "startDate": "2013-08-01",
+      "endDate": "2019-07-01",
+      "summary": "Product Owner for the Cassandra as a Service platform, and firmwide Cassandra database Subject Matter Expert for JP Morgan Chase. Pitched, funded, designed, built, and supported the Cassandra as a Service platform, and managed all processes end-to-end.",
+      "highlights": [
+        "Pitched the idea of a full Apache Cassandra platform as a service to executive management to help solve the data management requirements for several use cases within JP Morgan Chase globally. Got buy-in and commitment from senior leaders in central technology and individual lines of business.",
+        "Developed business case including charge back models to fund the operation of the service and prove value. Managed assets that totalled ~$50M annually, with a projectted savings of ~$8M vs managing a similarly sized environment manually",
+        "Initailly acted as engineering lead to design software, automation, and tooling  to support the platform, enabling on-demand delivery with minimal support personelle.",
+        "Executed all roles within the project including business management, operations, client engagement, training, risk and controls, and vendor engament."
+      ]
+    },
+    {
+      "company": "JP Morgan Chase",
+      "website": "https://chase.com",
+      "position": "Vice President | Lead Software Engineer",
       "startDate": "2010-08-16",
       "endDate": "2013-07-31",
-      "summary": "Worked in a central technology orginization called the Cheif Development Office (CDO) to provide company-wide frameworks, and best practice software methodologies. Operated in many roles within the Chief Development Office including software developer, technical support, training content development, training content delivery, and implementation services consultant.",
+      "summary": "Worked in a central technology orginization called the Cheif Development Office (CDO) to provide company-wide frameworks and advocate for best practice software methodologies. Operated in many roles within the Chief Development Office including software developer, technical support, training content development, training content delivery, and implementation services consultant.",
       "highlights": [
         "As a senior consultant for the CDO Software Engineering Practice, developed process and content for the implementation of software practices firm-wide at JP Morgan Chase. Then implemented these software practices via documentation, training, and development team engagements.",
-        "Worked as a member of the FAST Implementation Team to engage development teams within JP Morgan Chase to adopt firm-wide tooling and improve development processes. Provided training and consulting services to ~20 teams in 1 year within this role",
+        "Worked as a member of a team to engage development teams within JP Morgan Chase to adopt firm-wide tooling and improve development processes. Provided training and consulting services to ~50 teams in 3 years within this role",
         "Acted as a technical support lead for the FAST Application Stack (internal JPMC application server). Was responsible for managing support cases up to and including P1 support calls for some of the most critical applications in the bank",
         "Sotware development lead for the FAST Application Stack."
       ]
     },
     {
-      "company": "Sterling Commerce (AT&T)",
+      "company": "Sterling Commerce (AT&T/IBM)",
       "website": "",
-      "position": "Software Engineer",
+      "position": "Lead Software Engineer",
       "startDate": "2000-05-01",
       "endDate": "2010-08-15",
-      "summary": "Developer of software solutions for Sterling Commerce, a business ecommerce company now owned by IBM. Responsible for the design, creation, testing, deployment, and maintenance of applications to improve process in the company.",
+      "summary": "Developer of software solutions for Sterling Commerce, a business ecommerce company now owned by IBM. Responsible for the design, creation, testing, deployment, and maintenance of applications to improve processes in the company.",
       "highlights": [
         "Technical team lead for several applications used by the sales and finance/billing orginizations to improve processes and give greater visibiity into our customers needs and usage",
         "Worked with commercial product development teams to design and develop customer facing applications to improve customer/user experience",
-        "Standardized product development environment from an adhoc development shop to a fully process controlled environment. Configured environment and trained development orginization on CVS, Java, Jenkins, Maven, Nexus, Jira, automated deployment, and standard software stack (java, struts, jdo, jax-rs, etc)",
-        "Gained a breadth of technology experience inlcuding, but not limited to Java, Webservices, Spring, EJB, Portal (JSR-168), OSGI/Felix, JBoss/Tomcat, SalesForce.com, CAS single-sign-on"
+        "Standardized product development environment from an adhoc development shop to a fully process controlled environment. Configured environment and trained development orginization in modern software tooling and practices"
       ]
     }
   ],
@@ -117,6 +127,12 @@
       "summary": "The Expert Engineer Program is a year long training program designe to further develop JP Morgan Chase's top engineers (roughly the top 1%)."
     }
   ],
+  "certificates": [{
+    "name": "AWS Cloud Practitioner",
+    "date": "2023-03-01",
+    "issuer": "AWS",
+    "url": "https://aws.amazon.com/"
+  }],
   "interests": [],
   "references": [],
   "languages": [
